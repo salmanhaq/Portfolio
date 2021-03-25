@@ -41,7 +41,7 @@
                 <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
                     <div class="sb-sidenav-menu">
                         <div class="nav">
-                            <a class="nav-link" href="index.html">
+                            <a class="nav-link" href="{{route('admin.dashboard')}}">
                                 <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
                                 Dashboard
                             </a>
@@ -57,7 +57,7 @@
                                     <a class="nav-link" href="layout-sidenav-light.html">Light Sidenav</a>
                                 </nav>
                             </div> -->
-                            <a class="nav-link" href="#">
+                            <a class="nav-link" href="{{route('admin.main')}}">
                                 <div class="sb-nav-link-icon"><i class="fas fa-home"></i></div>
                                 Main
                             </a>
@@ -86,6 +86,8 @@
                 </nav>
             </div>
             <div id="layoutSidenav_content">
+
+            @yield('content')
 
             <footer class="py-4 bg-light mt-auto">
                     <div class="container-fluid">
